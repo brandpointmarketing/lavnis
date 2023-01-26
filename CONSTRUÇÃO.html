@@ -24,9 +24,35 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <link rel="stylesheet" href="mapas.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PECXGBC5N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0PECXGBC5N');
+</script>
 </head>
 
 <body style="font-family: 'Luxurious Roman', serif;background: radial-gradient(#01bffd 58%, #2641c2 79%);">
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '428283276080287');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=428283276080287&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     <nav class="navbar navbar-light navbar-expand-md fixed-top bg-white">
         <div class="container-fluid"><a class="navbar-brand" href="index.html" style="background: url(&quot;assets/img/logo.webp&quot;) center / cover no-repeat;height: 57px;width: 199.7031px;margin-right: 0px;"></a><button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
@@ -340,6 +366,14 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script>
+    document.getElementById("whatsApp").addEventListener("click", function(){
+      gtag('event', 'whatsapp');
+
+      });
+
+
+    </script>
 </body>
 
 </html>
